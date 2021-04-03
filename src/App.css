@@ -1,38 +1,296 @@
+@import '~antd/dist/antd.css';
 .App {
+  background-image: url("./image/pattern.jpg");
+  background-repeat: repeat;
+}
+.Navbar {
+  background-color: #f8f8f8;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 10px 0 5px rgba(255, 255, 255, 0.884);
+  height: 66px;
+  z-index: 20 ;
+  font-size: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loc_auto-logo img {
+  width: 90px
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.First_sub {
+  background-size: contain;
+  background: linear-gradient(45deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.7)), url(./image/first_sub.jpg);
+  height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+}
+.First_sub h1 {
+  color: #f8f8f8;
+}
+.sub_btn {
+  text-align: center;
+  width: 150px
+}
+.slide {
+  margin: 10px 0;
+  text-align: center;
+
+}
+.menu {
+  background-color: #f8f8f8;
+}
+.intro_div {
+ 
+  margin: 60px 20px;
+
+}
+.intro_div-image {
+  width: 500px;
+}
+.intro_div-left {
+  flex: 1;
+  text-align: center;
+  
+}
+.intro_div-right {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.service_div {
+  margin: 30px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.281);
+}
+.service_div-item {
+  /* background: linear-gradient(90deg,rgb(32, 129, 219), rgb(4, 161, 223)); */
+  padding: 10px;
+  min-height: 250px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.service_div-item h2 {
+  color: #333;
+  transition: all 1s;
+}
+.service_div-item img {
+  width: 80px;
+  fill: rgb(32, 129, 219);
+  max-width: 100%;
+  /* padding: 10px; */
+  margin: 0 auto;
+  /* text-align: center; */
+  /* border-radius: 10px; */
+  transition: all 1s;
+  transform: scale(1);
+}
+.service_div-item:hover img {
+  transform: scale(1.2);
+}
+.service_div-item:hover h2 {
+  transform: translate(0, -10px);
+}
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  margin-top:50px;
+  margin-bottom: 100px;
+}
+.contact-div {
+  background-color:rgb(90, 168, 240);
+  border-radius: 15px;
+  width: 500px;
+  height: 250px;
+  z-index: 5;
+  position: relative;
+  right: 100px;
+}
+.contact-form {
+  background-color:#fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  top: 80px;
+  left: 120px;
+  box-shadow: 5px 5px 2px rgba(160, 160, 160, 0.288);
+  z-index: 6;
+}
+.contact-form input, .contact-form textarea {
+  border-radius: 8px;
+}
+.send_btn {
+  width: 80px;
+  text-align: center;
+}
+.footer {
+  margin-top: 200px;
+  
+  padding: 5px 30px;
+  background-color: #f7f7f7;
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+.footer p {
+  padding-top: 0.5%;
+  line-height: 14px;
+  justify-content: center;
+}
+.copyright {
+  padding-top: 1.5%;
+}
+.sign_main {
+  display: flex;
+  width: 100%;
+  min-height: 700px;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+.sign_div {
+  /* flex: 1; */
+  position: relative;
+  
+}
+.sign_in, .sign_up {
+  background-color: #fff;
+  border-radius: 3%;
+  max-width: 50%;
+  display: flex;
+  position: absolute;
+  top: 140px;
+  left: 180px;
+  z-index: 4;
+}
+.sign_up {
+  min-width: 60%;
+  height: 460px;
 }
 
-.App-link {
-  color: #61dafb;
+.sign_in-form,.sign_up-form  {
+  margin: 32px;
+  margin-bottom: 70px;
+}
+.sign_in-div, .sign_up-div {
+  border-radius: 51% 49% 26% 74% / 61% 34% 66% 39% ;
+  background-color: rgb(167, 208, 247);
+  height: 700px;
+  margin-top: 40px;
+  z-index: 2;
+}
+.sign_up-div {
+  background-color: rgb(181, 226, 194);
+}
+.login_img {
+  z-index: 5;
+  width: 350px;
+  position: absolute;
+  top: 360px;
+  left: 300px
+}
+.sign_up_img {
+  width: 360px;
+  top: 480px;
+  z-index: 5;
+  position: absolute;
+  left: 40px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extra_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+.extra_btn p {
+  margin-top: 5px;
+}
+
+.sign_in_btn, .sign_up_btn {
+  width: 100%;
+  margin: 10px 40px;
+ }
+ .sign_up_btn {
+  margin: 10px 80px;
+
+ }
+
+
+ @media (min-width: 375px) and (max-width: 767px) {
+  .loc_auto-logo img {
+    width: 70px
+  }
+  .contact-form {
+    position: relative;
+    top: 60px;
+    left: 20px;
+    width: 400%
+  }
+  .contact-div { 
+    top: -20px;
+    right: 50px;
+    width: 800px
+  }
+  .First_sub {
+    position: relative;
+    top: 110px;
+    height: 150px;
+  }
+  .slide {
+    position: relative;
+    top: 100px;
+  }
+  .intro_div {
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .intro_div-image {
+    width: 200px;
+  }
+  .service_div-item { 
+    min-height: 200px;
+  }
+  .sign_in, .sign_up{ 
+    left: 0;
+    top: 10;
+  }
+  .sign_up_img, .login_img, .sign_in-div, .sign_up-div {
+    display: none;
+  }
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+  .intro_div-image {
+    width: 300px;
+  }
+  .service_div-item { 
+    min-height: 200px;
+  }
+  .contact-form {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    width: 100%
+  }
+  .sign_up {
+    
+    top: -100
+   }
+
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .intro_div-image {
+    width: 100px;
+  }
+
+ }
